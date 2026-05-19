@@ -4,6 +4,10 @@ public class DestroySelf : MonoBehaviour
 {
     public void SelfDestruct()
     {
-        Destroy(gameObject);
+        gameObject.SetActive(false);
+    }
+    public void SelfConstruct()
+    {
+        gameObject.SetActive(true);
     }
 }
